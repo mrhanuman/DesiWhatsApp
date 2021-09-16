@@ -1,8 +1,10 @@
 package com.example.desiwhatsapp;
 
 import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.tabs.TabLayout;
@@ -11,11 +13,15 @@ import com.google.android.material.tabs.TabLayoutMediator;
 public class MainActivity extends AppCompatActivity {
     TabLayout tb;
     ViewPager2 vp;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         vp = findViewById(R.id.vp2);
         vp.setAdapter(new FragmentAdapter(getSupportFragmentManager(), getLifecycle()));
