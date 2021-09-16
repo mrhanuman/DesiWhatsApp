@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DesiWhatsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment1">chat fragment</string>
+    <string name="hello_blank_fragment2">status fragment</string>
+    <string name="hello_blank_fragment3">call fragment</string>
+</resources>
